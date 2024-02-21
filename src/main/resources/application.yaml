@@ -3,6 +3,11 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=camunda
 
+application:
+  demos:
+    http-connector:
+      url: https://mocki.io/v1/b14d4ecc-7bbd-48e8-889d-363f70a6f52c
+
 camunda:
   bpm:
     database:
