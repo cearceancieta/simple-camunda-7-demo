@@ -15,6 +15,7 @@
     <spring-boot.version>3.2.2</spring-boot.version>
     <camunda.version>7.20.0</camunda.version>
     <postgresql.version>42.7.1</postgresql.version>
+    <assertj-core.version>3.24.2</assertj-core.version>
   </properties>
 
   <dependencyManagement>
@@ -87,6 +88,12 @@
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-bpm-junit5</artifactId>
       <version>${camunda.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${assertj-core.version}</version>
       <scope>test</scope>
     </dependency>
 

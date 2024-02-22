@@ -12,3 +12,4 @@ camunda:
   bpm:
     database:
       schema-update: true
+    history-level: full

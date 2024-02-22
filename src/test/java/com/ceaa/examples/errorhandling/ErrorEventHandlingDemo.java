@@ -14,7 +14,7 @@ import static org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests.assertT
 
 @Slf4j
 @SpringBootTest
-public class ErrorEventHandlingTest {
+public class ErrorEventHandlingDemo {
 
     @Autowired
     RuntimeService runtimeService;
@@ -26,7 +26,7 @@ public class ErrorEventHandlingTest {
     }
 
     @Test
-    void test() {
+    void demo() {
         ProcessInstance processInstance = runtimeService
                 .startProcessInstanceByKey("errorEventHandlingProcess");
         log.info(processInstance.getId());

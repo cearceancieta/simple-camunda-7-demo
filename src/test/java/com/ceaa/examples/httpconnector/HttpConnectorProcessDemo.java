@@ -11,14 +11,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @Slf4j
 @SpringBootTest
-public class HttpConnectorProcessTest {
+public class HttpConnectorProcessDemo {
     @Autowired
     RuntimeService runtimeService;
     @Autowired
     HistoryService historyService;
 
     @Test
-    void test() {
+    void demo() {
         ProcessInstance process = runtimeService.startProcessInstanceByKey("connectToApiProcess");
         log.info(process.getId());
         HistoricVariableInstance response = historyService.createHistoricVariableInstanceQuery()
